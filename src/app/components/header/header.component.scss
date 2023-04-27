@@ -1,0 +1,150 @@
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.menu__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.menu__title {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 19px;
+    color: #464646;
+    ;
+}
+
+.nav__menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.menu__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    list-style: none;
+}
+
+.menu__list__item__contato {
+    list-style: none;
+    text-decoration: none;
+}
+
+.menu__list__item__contato>a {
+    list-style: none;
+    text-decoration: none;
+    color: #464646;
+    font-weight: bold;
+}
+
+.menu__list__item>a {
+    text-decoration: none;
+    color: #464646;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 19px;
+    color: #464646;
+}
+
+.title {
+    display: flex;
+    justify-content: space-around;
+}
+
+.title__div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 0;
+    margin: 4rem 12rem 0 12rem;
+}
+
+.title__network {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.title__network__item {
+    list-style: none;
+}
+
+.title__network__item>a {
+    text-decoration: none;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+
+
+    /* Preto/100% */
+
+    color: #464646;
+}
+
+.title__profile {
+    width: 27rem;
+    height: 25rem;
+}
+
+.title__bio {
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 61px;
+
+    /* Preto/100% */
+
+    color: #464646;
+    flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+}
+
+.title__subsection {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+
+    /* Preto/100% */
+
+    color: #464646;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.title__network__item {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+
+
+    /* Preto/100% */
+
+    color: #464646;
+}
