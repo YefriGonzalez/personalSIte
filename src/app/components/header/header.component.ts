@@ -52,22 +52,22 @@ export class HeaderComponent {
     let menuItem: MenuNetworkItem = {
       link: 'https://github.com/YefriGonzalez',
       name: 'Github',
-      img: '../../../assets/redirect.png'
+      img: './assets/redirect.png'
     }
     let menuItem2: MenuNetworkItem = {
       link: 'https://www.linkedin.com/in/yefrigonzalez/',
       name: 'Linkedin',
-      img: '../../../assets/redirect.png'
+      img: './assets/redirect.png'
     }
     let menuItem3: MenuNetworkItem = {
       link: '',
       name: 'Instagram',
-      img: '../../../assets/redirect.png'
+      img: './assets/redirect.png'
     }
     let menuItem4: MenuNetworkItem = {
       link: '',
       name: 'Currículo',
-      img: '../../../assets/redirect.png'
+      img: './assets/redirect.png'
     }
     this.itemsNetwork.push(menuItem);
     this.itemsNetwork.push(menuItem2);

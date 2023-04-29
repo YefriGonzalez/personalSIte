@@ -1,0 +1,11 @@
+<section class="hobbies" id="hobbies">
+    <h3 class="hobbies__title">Hobbies</h3>
+        <div class="hobbies__line">
+            <div class="hobbies__box" *ngFor="let hobbie of hobbies">
+                <ul class="list__nav">
+                    <li class="hobbies__img"><img [src]="hobbie.url" src="assets\skate_icon.png"></li>
+                    <li class="hobbies__name"> {{hobbie.name}}</li>
+                </ul>
+            </div>
+    </div>
+</section>

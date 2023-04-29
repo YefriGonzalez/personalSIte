@@ -1,0 +1,46 @@
+<section class="formcontato" id="contacto">
+    <div  class="formcontato__contacto">
+        <div class="formcontato--esquerda">
+            <img class="formcontato__img" src="assets\contact_image.png">
+        </div>
+        <div class="formcontato__text">
+            <h2 class="formcontato__title">Contacto</h2>
+            <h3 class="formcontato__subtext">¿Quieres contactarme?</h3>
+            <h3 class="formcontato__subtext">Complete el siguiente formulario y me pondré en contacto con usted lo antes posible. </h3>
+            <form class="formcontato__form" [formGroup]="formContact" (submit)="sendEmail()" name="form">
+                <div class="form-group">
+                    <mat-form-field appearance="outline" class="full-width-input">
+                        <mat-label [style.fontSize.px]="16">Nombre</mat-label>
+                        <input formControlName="name" matInput class="form-control" type="text" name="nombre" placeholder="Nombre" required>
+                        
+                    </mat-form-field>
+                </div>
+                <div class="form-group">
+                    <mat-form-field appearance="outline" class="full-width-input">
+                        <mat-label [style.fontSize.px]="16">Email</mat-label>
+                        <input formControlName="email" matInput class="form-control" type="email" name="email" placeholder="E-mail" required>
+                    </mat-form-field>
+                </div>
+                <div class="form-group">
+                    <mat-form-field  appearance="outline" class="full-width-input">
+                        <mat-label [style.fontSize.px]="16">Asunto</mat-label>
+                        <input  formControlName="asunto" matInput class="form-control" type="text" name="asunto" placeholder="Assunto" required>
+                        
+                    </mat-form-field>
+                </div>
+                <div class="form-group">
+                    <mat-form-field appearance="outline" class="full-width-input">
+                        <mat-label [style.fontSize.px]="16">Mensaje</mat-label>
+                        <textarea formControlName="message" matInput class="form-control" rows="5" cols="40" id="mensagem" name="mensaje" placeholder="Mensaje" required></textarea>
+                        
+                    </mat-form-field>
+                </div>
+                <div class="form-group">
+                    <button mat-raised-button color="primary" [disabled]="!formContact.valid"  type="submit">Enviar mensaje</button>
+                </div>
+               
+            </form>
+        </div>
+    </div>
+</section>
+

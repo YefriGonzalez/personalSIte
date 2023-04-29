@@ -1,40 +1,48 @@
-.skills {
+.academic {
+    background: #EAF2FD;
+
+}
+
+.academic__container {
     margin: 4rem 12rem 0 12rem;
 }
 
-.skills__title {
-    text-align: center;
+.academic__title {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
     line-height: 38px;
+    /* identical to box height */
+
     text-align: center;
+
+    /* Preto/100% */
+    padding-top: 4rem;
     color: #464646;
 }
 
-.skills__line {
+.academic__courses {
     display: flex;
     flex-wrap: wrap;
-    gap: 4rem;
-    
+    gap: 1.2rem;
+    padding-bottom: 4rem;
 }
 
-
-.skills__box {
+.academic__courses__box {
     border:1px solid #464646;
     border-radius: 0.6rem;
     margin: 0;
     padding: 0;
     box-sizing: content-box;
-    width: 15%;
+    width: 32%;
 }
 
-.list__nav {
+.academic__courses__list {
     width: 100%;
     list-style: none;
     margin: 0;
-    padding: 1rem 0 1rem 0;
+    padding: 2rem 0 1rem 0;
     box-sizing: content-box;
     display: flex;
     flex-direction: column;
@@ -42,24 +50,31 @@
     text-align: center;
 }
 
-.skills__img>img {
-    width: 5rem;
+.academic__courses__item__img>img {
+    width: 16rem;
     height: 5rem;
     box-sizing: content-box;
-   
-   
 }
-.skills__img{
+
+.academic__courses__item__img {
     width: 100%;
     box-sizing: content-box;
 }
-.skills__name {
+
+.academic__courses__item__title {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    color: #464646;
+}
+
+.academic__courses__item__subtitle {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
     font-size: 16px;
     line-height: 19px;
-    text-align: center;
-    box-sizing: content-box;
     color: #464646;
 }

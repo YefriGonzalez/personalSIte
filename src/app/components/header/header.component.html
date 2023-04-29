@@ -1,6 +1,6 @@
 <section class="menu">
     <header class="menu__header">
-        <img src="../../../assets/Vector.png">
+        <img src="./assets/Vector.png">
         <h3 class="menu__title">Yefri González</h3>
     </header>
     <nav class="nav__menu">
@@ -11,16 +11,18 @@
     </nav>
 </section>
  <!-- Sección del Header/Title/Hero -->
+
  <section class="title">
     <div class="title__div">
         <div class="title__container">
             <h2 class="title__bio">{{title}}</h2>
             <h3 class="title__subsection">{{subtitle}}</h3>
+            <br>
             <ul class="title__network">
                 <li class="title__network__item" *ngFor="let item of itemsNetwork"><a [href]="item.link">{{item.name}} <img [src]="item.img"> </a></li>
             </ul>
         </div>
-        <img class="title__profile" src="../../../assets/avatar.png"  alt="Imagen">
+        <img class="title__profile" src="./assets/avatar.png"  alt="Imagen">
     </div>
 </section>
 

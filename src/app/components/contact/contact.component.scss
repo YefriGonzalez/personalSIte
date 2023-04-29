@@ -1,0 +1,61 @@
+.formcontato {
+    background: #EAF2FD;
+}
+
+.formcontato__title {
+    width: 141px;
+    height: 38px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    /* identical to box height */
+
+
+    /* Preto/100% */
+
+    color: #464646;
+
+}
+
+.formcontato__subtext {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+
+    /* Preto/100% */
+    margin-bottom: 2rem;
+    color: #464646;
+}
+.formcontato__form{
+    width: 50rem;
+}
+.formcontato__text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.formcontato__contacto{
+    padding: 3rem 12rem 3rem 12rem;
+   
+}
+.full-width-input,
+button {
+  width: 100%;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+}
+.example-section {
+  margin: 12px 12px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.example-margin {
+  margin: 0 12px;
+}
