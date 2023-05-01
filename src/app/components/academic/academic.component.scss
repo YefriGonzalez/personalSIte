@@ -13,13 +13,10 @@
     font-weight: 700;
     font-size: 32px;
     line-height: 38px;
-    /* identical to box height */
-
     text-align: center;
-
-    /* Preto/100% */
     padding-top: 4rem;
     color: #464646;
+    margin-bottom: 2.5rem;
 }
 
 .academic__courses {
@@ -30,7 +27,7 @@
 }
 
 .academic__courses__box {
-    border:1px solid #464646;
+    border: 1px solid #464646;
     border-radius: 0.6rem;
     margin: 0;
     padding: 0;
@@ -77,4 +74,72 @@
     font-size: 16px;
     line-height: 19px;
     color: #464646;
+}
+
+@media (max-width: 1024px) {
+
+    .academic__container {
+        margin: 4rem 2rem 4rem 2rem;
+    }
+
+
+    .academic__courses__box {
+        width: 30%;
+    }
+
+    .academic__courses__item__img>img {
+        width: 9.2rem;
+        height: 4rem;
+        box-sizing: content-box;
+    }
+
+    .academic__courses {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        padding-bottom: 4rem;
+    }
+
+    .academic__courses__item__title {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .academic__courses__item__subtitle {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+}
+
+/* Medium only */
+@media (max-width: 480px) {
+    .academic__container {
+        margin: 3rem 1rem 3rem 1rem;
+    }
+
+    .academic__courses__box {
+        width: 42%;
+    }
+    .academic__courses__item__img>img {
+        width: 8rem;
+        height: 3rem;
+        box-sizing: content-box;
+    }
+    .skills__line {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .academic__courses__item__title {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .academic__courses__item__subtitle {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
 }

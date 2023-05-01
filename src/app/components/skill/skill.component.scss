@@ -11,18 +11,18 @@
     line-height: 38px;
     text-align: center;
     color: #464646;
+    margin-bottom: 3rem;
 }
 
 .skills__line {
     display: flex;
     flex-wrap: wrap;
     gap: 4rem;
-    
 }
 
 
 .skills__box {
-    border:1px solid #464646;
+    border: 1px solid #464646;
     border-radius: 0.6rem;
     margin: 0;
     padding: 0;
@@ -46,13 +46,15 @@
     width: 5rem;
     height: 5rem;
     box-sizing: content-box;
-   
-   
+
+
 }
-.skills__img{
+
+.skills__img {
     width: 100%;
     box-sizing: content-box;
 }
+
 .skills__name {
     font-family: 'Raleway';
     font-style: normal;
@@ -62,4 +64,85 @@
     text-align: center;
     box-sizing: content-box;
     color: #464646;
+}
+
+
+@media (max-width: 1024px) {
+
+    .skills {
+        margin: 4rem 2rem 4rem 2rem;
+    }
+
+    .skills__box {
+        border: 1px solid #464646;
+        border-radius: 0.6rem;
+        margin: 0;
+        padding: 0;
+        box-sizing: content-box;
+        width: 30%;
+    }
+
+    .skills__line {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .skills__title {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 26px;
+        /* identical to box height */
+
+        text-align: center;
+
+        /* Preto/100% */
+
+        color: #464646;
+
+        /* Preto/100% */
+        margin-bottom: 3rem;
+        color: #464646;
+    }
+
+}
+
+/* Medium only */
+@media (max-width: 480px) {
+    .skills {
+        margin: 3rem 1rem 3rem 1rem;
+    }
+
+    .skills__box {
+        border: 1px solid #464646;
+        border-radius: 0.6rem;
+        margin: 0;
+        padding: 0;
+        box-sizing: content-box;
+        width: 42%;
+    }
+
+    .skills__line {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .skills__title {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 26px;
+        /* identical to box height */
+
+        text-align: center;
+
+        /* Preto/100% */
+        margin-bottom: 3rem;
+        color: #464646;
+    }
+
 }

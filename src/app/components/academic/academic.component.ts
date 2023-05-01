@@ -18,7 +18,6 @@ export class AcademicComponent {
       url: './assets/courses/usac.png',
       subttitle: '2020-Actualmente',
       title:'Ingenieria en Sistemas'
-
     }
     let course2: IAcademicCourse = {
       url: './assets/courses/OAS.gif',
@@ -29,13 +28,11 @@ export class AcademicComponent {
       url: './assets/courses/ONE.png',
       title: 'Oracle Next Education',
       subttitle:'Junio 2022-Febrero 2023'
-     
     }
     let course4: IAcademicCourse = {
       url: './assets/courses/sigel.png',
       title: 'Job Academy',
       subttitle:'Julio 2022-Diciembre 2022'
-     
     }
     let course5: IAcademicCourse = {
       url: './assets/courses/platzi.png',

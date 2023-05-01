@@ -4,11 +4,111 @@
     font-weight: 700;
     font-size: 32px;
     line-height: 38px;
-    /* identical to box height */
-
     text-align: center;
-
-    /* Preto/100% */
-
     color: #464646;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+}
+
+.experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.experiencie__box {
+    text-align: left;
+    width: 43rem;
+    margin-bottom: 4rem;
+}
+
+.experience__title {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 26px;
+    color: #464646;
+}
+
+.experience__text {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    color: #464646;
+}
+
+.experience__info__text {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 17px;
+    color: #464646;
+}
+
+@media (max-width: 1024px) {
+
+    .experience__section__title {
+        font-size: 24px;
+        line-height: 26px;
+    }
+
+    .experience__title {
+        font-size: 21px;
+        line-height: 21px;
+    }
+
+    .experience__text {
+        font-size: 18px;
+        line-height: 18px;
+    }
+
+    .experience__info__text {
+        font-size: 14px;
+        line-height: 14px;
+    }
+    .experience {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .experiencie__box {
+        text-align: left;
+        width: 32rem;
+        margin-bottom: 4rem;
+    }
+}
+
+/* Medium only */
+@media (max-width: 480px) {
+    .experience__section__title {
+
+        font-size: 24px;
+        line-height: 26px;
+    }
+
+    .experience__title {
+        font-size: 21px;
+        line-height: 21px;
+    }
+
+    .experience__text {
+        font-size: 18px;
+        line-height: 18px;
+    }
+
+    .experience__info__text {
+        font-size: 14px;
+        line-height: 14px;
+    }
+    .experiencie__box {
+        text-align: left;
+        width: 15rem;
+        margin-bottom: 4rem;
+    }
+
 }
