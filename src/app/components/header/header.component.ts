@@ -13,7 +13,7 @@ export class HeaderComponent {
 
   itemsNetwork: MenuNetworkItem[] = [];
   constructor() {
-    this.title = "Hola, mi nombre es Yefri Gonzalez, programador, estudiante de Ingenieria en Sistemas, estudiante de Ciberseguridad."
+    this.title = "Hola, mi nombre es Yefri Gonzalez, programador, estudiante de Ingenieria en Sistemas y  estudiante de Ciberseguridad."
     this.subtitle = "Soy estudiante de 6to semestre de Ingenieria en Sistemas en Universidad San Carlos de Guatemala, tambien estudiante de Ciberseguridad en la OEA(Organizacion de los Estados Americanos)"
     this.chargueItemsNetwork();
   }
