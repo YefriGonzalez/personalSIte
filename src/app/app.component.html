@@ -1,17 +1,17 @@
-<body>
+<body >
     <section class="menu">
         <header class="menu__header">
             <img src="./assets/Vector.png">
             <h3 class="menu__title">Yefri González</h3>
         </header>
         <nav class="nav__menu">
-            <ul class="menu__list" >
+            <ul class="menu__list">
                 <li class="menu__list__item" *ngFor="let item of items"><a [href]="item.link">{{item.name}}</a></li>
             </ul>
-            <li class="menu__list__item__contato"><a href="#contacto">yefrig00@gmail.com</a></li>
+            <li class="menu__list__item__contato"><a href="#contacto">Contactame</a></li>
         </nav>
-    </section>
-    <app-header ></app-header>
+    </section> 
+    <app-header></app-header>
     <app-about id="about"></app-about>
     <app-skill id="skills"></app-skill>
     <app-hobbies id="hobbies"></app-hobbies>

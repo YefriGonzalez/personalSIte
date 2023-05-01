@@ -1,5 +1,9 @@
-import { Component } from '@angular/core';
+import { Component,HostBinding,Inject,Renderer2 } from '@angular/core';
 import { MenuItem } from './interfaces/menu-item';
+import { ThemeService } from './services/theme.service';
+import { DOCUMENT } from '@angular/common';
+import { OverlayContainer } from '@angular/cdk/overlay';
+import { ThemePalette } from '@angular/material/core';
 
 @Component({
   selector: 'app-root',
@@ -7,9 +11,10 @@ import { MenuItem } from './interfaces/menu-item';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'personal_website';
+  
   items: MenuItem[] = [];
-  constructor(){
+  isDarkTheme: boolean = false;
+  constructor(private themeService:ThemeService,private overlayContainer: OverlayContainer){
     this.chargueMenuItems();
   }
   chargueMenuItems() {
@@ -39,4 +44,18 @@ export class AppComponent {
     this.items.push(menuItem4);
     this.items.push(menuItem5);
   }
+  
+  @HostBinding('class') class = 'dark-theme';
+  switchMode() {
+    if (this.class === 'dark-theme') {
+      this.class = 'ligth-theme';
+    } else {
+      this.class = 'dark-theme';
+    }
+  
+  }
+  get theme(): ThemePalette {
+    return this.isDarkTheme ? 'primary' : 'warn';
+  }
+  
 }

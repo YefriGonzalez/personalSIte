@@ -1,8 +1,8 @@
-/* You can add global styles to this file, and also import other style files */
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+
 
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
-/* You can add global styles to this file, and also import other style files */
 
 *,
 body {
@@ -21,33 +21,12 @@ body {
   justify-content: center;
 }
 
-.grid-container {
-  margin: 20px;
-}
 
-.fluid {
-  width: 100%;
-}
-
-.my-header > .mat-mdc-card-header-text {
-  width: 100% !important;
-  margin: 0 !important;
-  padding: 14px 14px 0 14px;
-  background-color: #1565c0;
-  color: white;
-}
 
 .mat-divider {
   border-top-color: rgba(0, 0, 0, 0.50);
 }
 
-.full-width-table {
-  width: 100%;
-}
-
-.hide{
-  display: none;
-}
 
 .cursor-pointer:hover {
   cursor: pointer !important;
@@ -65,80 +44,3 @@ body {
   width: 100%;
 }
 
-.selected-row:hover {
-  background-color: beige;
-}
-
-.header{
-  padding-top: 2rem;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.progress-upms{
-  padding-top: 3.5rem;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-.upm-item{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 12rem;
-  width: 14rem;
-}
-
-.flex-wrapper {
-  display: flex;
-  flex-flow: row nowrap;
-}
-
-.single-chart {
-  width: 8em;
-  justify-content: space-around ;
-}
-
-.circular-chart {
-  display: block;
-  margin: 10px auto;
-  max-width: 80%;
-  max-height: 250px;
-}
-
-.circle-bg {
-  fill: none;
-  stroke: #1565c057;
-  stroke-width: 3.8;
-}
-
-.circle {
-  fill: none;
-  stroke-width: 2.9;
-  stroke-linecap: round;
-  animation: progress 1s ease-out forwards;
-}
-
-@keyframes progress {
-  0% {
-  stroke-dasharray: 0 100;
-  }
-}
-
-.circular-chart.blue .circle {
-  stroke: #1565c0;
-}
-
-.percentage {
-  fill: #666;
-  font-family: sans-serif;
-  font-size: 0.5em;
-  text-anchor: middle;
-}
-
-.mat_tab{
-  margin: 1.5rem;
-  border: 1px groove;
-}
