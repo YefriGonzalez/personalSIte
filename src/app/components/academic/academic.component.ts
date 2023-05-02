@@ -16,7 +16,7 @@ export class AcademicComponent {
 
   chargueCourses(){
     let course1: IAcademicCourse = {
-      url: './assets/courses/usac.png',
+      url: './assets/courses/usac1.png',
       subttitle: '2020-Actualmente',
       title:'Ingenieria en Sistemas'
     }
