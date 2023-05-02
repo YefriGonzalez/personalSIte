@@ -1,5 +1,6 @@
-import { Component, Input } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Component, Input, ViewChild } from '@angular/core';
+import { FormBuilder, FormGroup, NgForm, Validators } from '@angular/forms';
+import { EmailService } from 'src/app/services/email.service';
 import Swal from 'sweetalert2';
 //import * as nodemailer from 'nodemailer';
 @Component({
@@ -10,8 +11,9 @@ import Swal from 'sweetalert2';
 export class ContactComponent {
   formContact!: FormGroup;
   userEmail: string = "yefrig00@gmail.com";
-  @Input() darkTheme!:boolean;
-  constructor(private formBuilder: FormBuilder) {
+  @Input() darkTheme!: boolean;
+  @ViewChild('formContacto') miFormulario!: NgForm;
+  constructor(private formBuilder: FormBuilder, private emailService: EmailService) {
     this.buildForm();
   }
   private buildForm() {
@@ -37,33 +39,22 @@ export class ContactComponent {
 
   async sendEmail() {
     if (this.formContact.valid) {
-     
-      /*const transporter = nodemailer.createTransport({
-        host: "smtp.ethereal.email",
-        port: 587,
-        secure: false,
-        auth: {
-          user: this.userEmail,
-          pass: 'ydsjpnidtaiflugz'
+      this.emailService.sendEmail(this.formContact.value).subscribe((resp) => {
+        if (resp.status == true) {
+          Swal.fire({
+            position: 'top-end',
+            icon: 'success',
+            title: 'Correo electrónico enviado',
+            showConfirmButton: false,
+            timer: 1500
+          });
+          this.formContact.reset();
+          this.formContact.controls['name'].setErrors(null);
+          this.formContact.controls['email'].setErrors(null);
+          this.formContact.controls['asunto'].setErrors(null);
+          this.formContact.controls['message'].setErrors(null);
         }
       });
-      let info = await transporter.sendMail({
-        from: this.Email?.value, // sender address
-        to: this.userEmail, // list of receivers
-        subject: this.Asunto?.value, // Subject line
-        text: this.Message?.value, // plain text body
-      });
-
-      Swal.fire({
-        position: 'top-end',
-        icon: 'success',
-        title: 'Correo electrónico enviado',
-        showConfirmButton: false,
-        timer: 1500
-      })
-    */
-
     }
-
   }
 }

@@ -1,9 +1,6 @@
 import { Component,HostBinding,Inject,Renderer2 } from '@angular/core';
 import { MenuItem } from './interfaces/menu-item';
-import { ThemeService } from './services/theme.service';
-import { DOCUMENT } from '@angular/common';
-import { OverlayContainer } from '@angular/cdk/overlay';
-import { ThemePalette } from '@angular/material/core';
+
 
 @Component({
   selector: 'app-root',
@@ -14,7 +11,7 @@ export class AppComponent {
   
   items: MenuItem[] = [];
   darkMode: boolean = false;
-  constructor(private themeService:ThemeService,private overlayContainer: OverlayContainer){
+  constructor(){
     this.chargueMenuItems();
   }
   chargueMenuItems() {
