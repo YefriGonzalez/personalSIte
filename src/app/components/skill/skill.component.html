@@ -1,10 +1,10 @@
 <section class="skills" id="skills">
-    <h3 class="skills__title">Skills</h3>
+    <h3 [style]="!darkTheme?'':'color:#fff;'" class="skills__title">Skills</h3>
     <div class="skills__line">
         <div class="skills__box" *ngFor="let skill of skills">
             <ul class="list__nav">
                 <li class="skills__img"><img [src]="skill.url"></li>
-                <li class="skills__name">{{skill.name}}</li>
+                <li [style]="!darkTheme?'':'color:#fff;'" class="skills__name">{{skill.name}}</li>
             </ul>
         </div>
     </div>

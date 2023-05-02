@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-about',
@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AboutComponent {
   title:string;
+  @Input() darkTheme!:boolean;
   paragrapher1:string;
   paragrapher2:string;
   constructor(){

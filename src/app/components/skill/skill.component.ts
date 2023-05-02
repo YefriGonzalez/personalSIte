@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { ISkill } from 'src/app/interfaces/i-skill';
 
 @Component({
@@ -8,6 +8,7 @@ import { ISkill } from 'src/app/interfaces/i-skill';
 })
 export class SkillComponent {
   skills:ISkill[];
+  @Input() darkTheme!:boolean;
   constructor(){
     this.skills=[];
     this.chargueSkills()

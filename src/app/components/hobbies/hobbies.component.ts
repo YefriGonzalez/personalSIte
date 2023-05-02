@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { IHobbie } from 'src/app/interfaces/i-hobbie';
 
 @Component({
@@ -8,6 +8,7 @@ import { IHobbie } from 'src/app/interfaces/i-hobbie';
 })
 export class HobbiesComponent {
   hobbies:IHobbie[];
+  @Input() darkTheme!:boolean;
   constructor(){
     this.hobbies=[];
     this.chargueHobbies();

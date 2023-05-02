@@ -1,17 +1,17 @@
 <section class="experience" id="xp">
-    <h2 class="experience__section__title">Experiencia Profesional</h2>
+    <h2 class="experience__section__title" [style]="!darkTheme?'':'color:#fff;'">Experiencia Profesional</h2>
     <div class="experiencie__box" *ngFor="let exp of experiences">
         <div class="experience__info" >
-            <h2 class="experience__title">{{exp.title}}</h2>
+            <h2 class="experience__title" [style]="!darkTheme?'':'color:#fff;'">{{exp.title}}</h2>
             <br>
-            <h3 class="experience__text">{{exp.text}}</h3>
+            <h3 class="experience__text" [style]="!darkTheme?'':'color:#fff;'">{{exp.text}}</h3>
             <br>
-            <p class="experience__info__text">{{exp.info}}</p>
+            <p class="experience__info__text" [style]="!darkTheme?'':'color:#fff;'">{{exp.info}}</p>
             <br>
             <mat-list class="list_experience">
                 <mat-list-item *ngFor="let item of exp.items" class="experience__item">
-                  <mat-icon matListItemIcon>done_all</mat-icon>
-                  <div matListItemTitle>{{item}}</div>
+                  <mat-icon matListItemIcon [style]="!darkTheme?'':'color:#fff;'" >done_all</mat-icon>
+                  <div matListItemTitle [style]="!darkTheme?'':'color:#fff;'">{{item}}</div>
                 </mat-list-item>
               </mat-list>
         </div>

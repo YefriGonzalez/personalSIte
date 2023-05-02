@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { MenuItem } from 'src/app/interfaces/menu-item';
 import { MenuNetworkItem } from 'src/app/interfaces/menu-network-item';
 
@@ -10,7 +10,7 @@ import { MenuNetworkItem } from 'src/app/interfaces/menu-network-item';
 export class HeaderComponent {
   title: string;
   subtitle: string;
-
+  @Input() darkTheme!:boolean;
   itemsNetwork: MenuNetworkItem[] = [];
   constructor() {
     this.title = "Hola, mi nombre es Yefri Gonzalez, programador, estudiante de Ingenieria en Sistemas y  estudiante de Ciberseguridad."

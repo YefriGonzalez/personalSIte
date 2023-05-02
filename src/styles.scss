@@ -10,24 +10,15 @@ body {
   padding: 0;
 }
 
-.overlay {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(70, 76, 134, 0.8);
-  z-index: 10;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-
 
 .mat-divider {
   border-top-color: rgba(0, 0, 0, 0.50);
 }
 
-
+.dark-mode {
+  background: #333;
+  color: #fff;
+}
 .cursor-pointer:hover {
   cursor: pointer !important;
 }
@@ -43,4 +34,3 @@ body {
 .full-width-table{
   width: 100%;
 }
-

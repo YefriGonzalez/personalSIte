@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { IExperience } from 'src/app/interfaces/i-experience';
 
 @Component({
@@ -8,6 +8,7 @@ import { IExperience } from 'src/app/interfaces/i-experience';
 })
 export class ExperienceComponent {
   experiences:IExperience[];
+  @Input() darkTheme!:boolean;
   constructor(){
     this.experiences=[];
     this.chargueExperiences();

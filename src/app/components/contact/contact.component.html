@@ -1,53 +1,51 @@
-<section class="formcontato" id="contacto">
+<section [ngClass]="{'formcontato':darkTheme==false}" id="contacto">
     <div  class="formcontato__contacto">
         <div class="formcontato__text">
             <div class="title">
                 <mat-icon>message</mat-icon>
-                <h2 class="formcontato__title">Contacto</h2>
+                <h2 [style]="!darkTheme?'':'color:#fff;'" class="formcontato__title">Contacto</h2>
             </div>
            
-            <h3 class="formcontato__subtext">¿Quieres contactarme?</h3>
-            <h3 class="formcontato__subtext">Complete el siguiente formulario y me pondré en contacto con usted lo antes posible. </h3>
-            <form class="formcontato__form" [formGroup]="formContact" (submit)="sendEmail()" name="form">
-                <div class="form-group">
-                    <mat-form-field appearance="outline" class="full-width-input">
-                        <mat-label [style.fontSize.px]="16">Nombre</mat-label>
-                        <input formControlName="name" matInput class="form-control" type="text" name="nombre" placeholder="Nombre" required>
+            <h3 class="formcontato__subtext" [style]="!darkTheme?'':'color:#fff;'">¿Quieres contactarme?</h3>
+            <h3 class="formcontato__subtext" [style]="!darkTheme?'':'color:#fff;'">Complete el siguiente formulario y me pondré en contacto con usted lo antes posible. </h3>
+            <form class="formcontato__form"  [style]="!darkTheme?'':'color:#fff;'" [formGroup]="formContact" (submit)="sendEmail()" name="form">
+                <div >
+                    <mat-form-field appearance="outline"   class="full-width-input">
+                        <mat-label [style]="!darkTheme?'':'color:#fff;'" [style.fontSize.px]="16">Nombre</mat-label>
+                        <input [style]="!darkTheme?'':'color:#fff;'" formControlName="name" matInput  type="text" name="nombre" placeholder="Nombre" required>
                         <mat-error *ngIf="Name?.touched && Name?.hasError('required')">Nombre es <strong>requerido</strong></mat-error>
                     </mat-form-field>
                 </div>
-                <mat-divider></mat-divider>
                 <br>
                 <div class="form-group">
                     <mat-form-field appearance="outline" class="full-width-input">
-                        <mat-label [style.fontSize.px]="16">Email</mat-label>
-                        <input formControlName="email" matInput class="form-control" type="email" name="email" placeholder="E-mail" required>
+                        <mat-label [style]="!darkTheme?'':'color:#fff;'" [style.fontSize.px]="16">Email</mat-label>
+                        <input [style]="!darkTheme?'':'color:#fff;'" formControlName="email" matInput type="email" name="email" placeholder="E-mail" required>
                         <mat-error *ngIf="Email?.touched && Email?.hasError('required')">Email es <strong>requerido</strong></mat-error>
                         <mat-error *ngIf="Email?.touched && Email?.hasError('email')">No es email</mat-error>
                     </mat-form-field>
                 </div>
-               <mat-divider></mat-divider>
+               
                <br>
                 <div class="form-group">
                     <mat-form-field  appearance="outline" class="full-width-input">
-                        <mat-label [style.fontSize.px]="16">Asunto</mat-label>
-                        <input  formControlName="asunto" matInput class="form-control" type="text" name="asunto" placeholder="Asunto" required>
+                        <mat-label [style]="!darkTheme?'':'color:#fff;'" [style.fontSize.px]="16">Asunto</mat-label>
+                        <input [style]="!darkTheme?'':'color:#fff;'"  formControlName="asunto" matInput  type="text" name="asunto" placeholder="Asunto" required>
                         <mat-error *ngIf="Asunto?.touched && Asunto?.hasError('required')">Asunto es <strong>requerido</strong></mat-error>
                     </mat-form-field>
                 </div>
-                <mat-divider></mat-divider>
+              
                 <br>
                 <div class="form-group">
-                    <mat-form-field appearance="outline" class="full-width-input">
-                        <mat-label [style.fontSize.px]="16">Mensaje</mat-label>
-                        <textarea formControlName="message" matInput class="form-control" rows="5" cols="40" id="mensagem" name="mensaje" placeholder="Mensaje" required></textarea>
+                    <mat-form-field appearance="outline"  class="full-width-input">
+                        <mat-label [style]="!darkTheme?'':'color:#fff;'" [style.fontSize.px]="16">Mensaje</mat-label>
+                        <textarea  [style]="!darkTheme?'':'color:#fff;'" formControlName="message" matInput rows="5" cols="40" id="mensagem" name="mensaje" placeholder="Mensaje" required></textarea>
                         <mat-error *ngIf="Message?.touched && Message?.hasError('required')">Mensaje es <strong>requerido</strong></mat-error>
                     </mat-form-field>
                 </div>
                 <div class="form-group">
                     <button mat-raised-button color="primary" [disabled]="!formContact.valid"  type="submit">Enviar mensaje</button>
                 </div>
-               
             </form>
         </div>
     </div>

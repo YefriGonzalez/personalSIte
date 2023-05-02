@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import Swal from 'sweetalert2';
 //import * as nodemailer from 'nodemailer';
@@ -10,7 +10,7 @@ import Swal from 'sweetalert2';
 export class ContactComponent {
   formContact!: FormGroup;
   userEmail: string = "yefrig00@gmail.com";
-
+  @Input() darkTheme!:boolean;
   constructor(private formBuilder: FormBuilder) {
     this.buildForm();
   }

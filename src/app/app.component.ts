@@ -13,7 +13,7 @@ import { ThemePalette } from '@angular/material/core';
 export class AppComponent {
   
   items: MenuItem[] = [];
-  isDarkTheme: boolean = false;
+  darkMode: boolean = false;
   constructor(private themeService:ThemeService,private overlayContainer: OverlayContainer){
     this.chargueMenuItems();
   }
@@ -44,18 +44,10 @@ export class AppComponent {
     this.items.push(menuItem4);
     this.items.push(menuItem5);
   }
-  
-  @HostBinding('class') class = 'dark-theme';
-  switchMode() {
-    if (this.class === 'dark-theme') {
-      this.class = 'ligth-theme';
-    } else {
-      this.class = 'dark-theme';
-    }
-  
-  }
-  get theme(): ThemePalette {
-    return this.isDarkTheme ? 'primary' : 'warn';
+
+  changeMode(){
+    this.darkMode=!this.darkMode;
+    console.log(this.darkMode)
   }
   
 }

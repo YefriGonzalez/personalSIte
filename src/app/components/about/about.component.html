@@ -1,8 +1,8 @@
-<section class="about" id="sobre-mi">
+<section [ngClass]="{'about':darkTheme==false}" id="sobre-mi">
     <div class="about__container">
-        <h3 class="about__title">{{title}}</h3>
-        <p class="about__paragraph">{{paragrapher1}}</p>
-        <p class="about__paragraph">{{paragrapher2}}</p>
+        <h3 [style]="!darkTheme?'':'color:#fff;'" class="about__title">{{title}}</h3>
+        <p [style]="!darkTheme?'':'color:#fff;'" class="about__paragraph">{{paragrapher1}}</p>
+        <p [style]="!darkTheme?'':'color:#fff;'" class="about__paragraph">{{paragrapher2}}</p>
     </div>
 </section>
 

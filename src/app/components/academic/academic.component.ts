@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { IAcademicCourse } from 'src/app/interfaces/i-academic-course';
 
 @Component({
@@ -8,6 +8,7 @@ import { IAcademicCourse } from 'src/app/interfaces/i-academic-course';
 })
 export class AcademicComponent {
   courses:IAcademicCourse[];
+  @Input() darkTheme!:boolean;
   constructor(){
     this.courses=[];
     this.chargueCourses();
