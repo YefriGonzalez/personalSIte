@@ -6,7 +6,7 @@ import { Email } from '../interfaces/email';
 })
 export class EmailService {
 
-  private apiUrl = 'http://127.0.0.1:8000/api/sendEmail';
+  private apiUrl = 'https://web-site-backend.onrender.com/api/sendEmail';
 
   constructor(private http: HttpClient) { }
 

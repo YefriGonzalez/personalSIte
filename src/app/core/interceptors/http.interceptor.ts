@@ -45,8 +45,7 @@ export class HttpErrorInterceptor implements HttpInterceptor {
                     return throwError(() => new Error(error.error.message));
                     
                 }
-                this.Toast.fire({ icon: 'error',title:"Ops, ha ocurrido un error, intentelo de nuevo"})
-                console.clear();
+                this.Toast.fire({ icon: 'error',title:"Oops, ha ocurrido un error, intentelo de nuevo"})
                 return throwError(() => new Error(error.error.message));
             })
         );
