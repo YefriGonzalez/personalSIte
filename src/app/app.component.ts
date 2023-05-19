@@ -1,5 +1,6 @@
 import { Component, HostBinding, Inject, Renderer2 } from '@angular/core';
 import { MenuItem } from './interfaces/menu-item';
+import { DOCUMENT } from '@angular/common';
 
 
 @Component({
@@ -36,8 +37,8 @@ import { MenuItem } from './interfaces/menu-item';
 export class AppComponent {
 
   items: MenuItem[] = [];
-  darkMode: boolean = false;
-  constructor() {
+  darkMode:boolean=false;
+  constructor(@Inject(DOCUMENT) private document: Document) {
     this.chargueMenuItems();
   }
   chargueMenuItems() {
@@ -68,9 +69,21 @@ export class AppComponent {
     this.items.push(menuItem5);
   }
 
-  changeMode() {
-    this.darkMode = !this.darkMode;
-    console.log(this.darkMode)
+  onChangue(event:boolean) {
+    this.darkMode=event;
+    if (event) {
+      this.document.body.classList.add('dark-mode');
+    } else {
+      this.document.body.classList.remove('dark-mode');
+    }
+  }
+  changeMode(){
+    this.darkMode=!this.darkMode;
+    if (this.darkMode) {
+      this.document.body.classList.add('dark-mode');
+    } else {
+      this.document.body.classList.remove('dark-mode');
+    }
   }
 
 }

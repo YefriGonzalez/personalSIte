@@ -1,36 +1,4 @@
-@import '@angular/material/prebuilt-themes/indigo-pink.css';
+@import './assets/scss/themes.scss';
+html, body { height: 100%; }
+body { margin: 0; font-family: Montserrat, "Helvetica Neue", sans-serif; }
 
-
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-
-
-*,
-body {
-  margin: 0;
-  padding: 0;
-}
-
-
-.mat-divider {
-  border-top-color: rgba(0, 0, 0, 0.50);
-}
-
-.dark-mode {
-  background: #333;
-  color: #fff;
-}
-.cursor-pointer:hover {
-  cursor: pointer !important;
-}
-
-.pointer{
-  cursor: pointer;
-}
-
-.cell-pointer:hover {
-  cursor: pointer; 
-}
-
-.full-width-table{
-  width: 100%;
-}
