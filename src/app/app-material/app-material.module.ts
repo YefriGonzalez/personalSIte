@@ -24,20 +24,9 @@ import { MatSortModule } from '@angular/material/sort';
     MatFormFieldModule,
     MatInputModule,
     MatButtonModule,
-    MatTableModule,
-    MatSidenavModule,
-    MatToolbarModule,
     MatListModule,
     MatIconModule,
-    MatExpansionModule,
-    MatPaginatorModule,
-    MatProgressSpinnerModule,
-    MatProgressBarModule,
-    MatSelectModule,
-    MatCheckboxModule,
     MatTooltipModule,
-    MatTabsModule,
-    MatSortModule
   ],
 })
 export class AppMaterialModule {}
