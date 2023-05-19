@@ -1,17 +1,17 @@
-
- <!-- Sección del Header/Title/Hero -->
-
- <section class="title">
-    <div class="title__div">
-        <div class="title__container">
-            <h2 class="title__bio" [style]="!darkTheme?'':'color:#fff;'">{{title}}</h2>
-            <h3 class="title__subsection" [style]="!darkTheme?'':'color:#fff;'">{{subtitle}}</h3>
+<section class="px-1 pt-8 md:px-2 lg:px-8 xl:px-8">
+    <div class="flex flex-column-reverse sm:flex-column-reverse md:flex-row lg:flex-row xl:flex-row flex-wrap align-items-center lg:flex-nowrap xl:flex-nowrap mx-4 md:mx-5 lg:mx-8 xl:mx-8 ">
+        <div class="flex flex-column pt-3 xl:p-0 lg:p-0">
+            <h2 class="text-lg md:text-xl lg:text-5xl xl:text-5xl">{{title}}</h2>
             <br>
-            <ul class="title__network">
-                <li class="title__network__item" *ngFor="let item of itemsNetwork"><a [href]="item.link" [style]="!darkTheme?'':'color:#fff;'">{{item.name}} <img [src]="item.img" > </a></li>
+            <h3 class="text-sm md:text-base xl:text-3xl lg:text-3xl font-light  ">{{subtitle}}</h3>
+            <br>
+            <ul class="list-none flex gap-5 flex-wrap lg:flex-nowrap xl:flex-nowrap">
+                <li *ngFor="let item of itemsNetwork">
+                    <a class="no-underline" [href]="item.link">{{item.name}} <img [src]="item.img">
+                    </a>
+                </li>
             </ul>
         </div>
-        <img class="title__profile" src="./assets/avatar.png"  alt="Imagen">
+        <img class="w-5 md:w-4 lg:w-4 xl:w-4" src="./assets/avatar.png" alt="Imagen">
     </div>
 </section>
-

@@ -4,7 +4,8 @@ import { IAcademicCourse } from 'src/app/interfaces/i-academic-course';
 @Component({
   selector: 'app-academic',
   templateUrl: './academic.component.html',
-  styleUrls: ['./academic.component.scss']
+  styles: [
+  ]
 })
 export class AcademicComponent {
   courses:IAcademicCourse[];

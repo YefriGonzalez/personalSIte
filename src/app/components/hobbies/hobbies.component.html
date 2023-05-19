@@ -1,11 +1,10 @@
-<section class="hobbies" id="hobbies">
-    <h3 [style]="!darkTheme?'':'color:#fff;'" class="hobbies__title">Hobbies</h3>
-        <div class="hobbies__line">
-            <div class="hobbies__box" *ngFor="let hobbie of hobbies">
-                <ul class="list__nav">
-                    <li class="hobbies__img"><img [src]="hobbie.url" src="assets\skate_icon.png"></li>
-                    <li  [style]="!darkTheme?'':'color:#fff;'" class="hobbies__name"> {{hobbie.name}}</li>
-                </ul>
-            </div>
+<section class="px-1 pt-8 md:px-2 lg:px-8 xl:px-8" id="hobbies">
+    <h3 [style]="!darkTheme?'':'color:#fff;'" class="text-3xl text-center pb-7">Hobbies</h3>
+    <div class="flex flex-wrap  mx-4 md:mx-5 lg:mx-8 xl:mx-8 w-full gap-7">
+        <mat-card *ngFor="let hobbie of hobbies" class="flex w-10 md:w-5 lg:w-12rem xl:w-12rem  h-12rem lg:h-9rem xl:h-9rem justify-content-center align-items-center">
+            <mat-card-content class="flex justify-content-center h-9rem lg:h-full xl:h-full">
+                <img class="w-7" [src]="hobbie.url" /></mat-card-content>
+            <mat-card-subtitle class="text-xl pb-3 pt-3">{{hobbie.name}}</mat-card-subtitle>
+        </mat-card>
     </div>
 </section>

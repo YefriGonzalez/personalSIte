@@ -4,7 +4,7 @@ import { IExperience } from 'src/app/interfaces/i-experience';
 @Component({
   selector: 'app-experience',
   templateUrl: './experience.component.html',
-  styleUrls: ['./experience.component.scss']
+  styleUrls: []
 })
 export class ExperienceComponent {
   experiences:IExperience[];

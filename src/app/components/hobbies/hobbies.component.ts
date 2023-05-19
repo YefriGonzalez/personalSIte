@@ -4,7 +4,7 @@ import { IHobbie } from 'src/app/interfaces/i-hobbie';
 @Component({
   selector: 'app-hobbies',
   templateUrl: './hobbies.component.html',
-  styleUrls: ['./hobbies.component.scss']
+  styleUrls: []
 })
 export class HobbiesComponent {
   hobbies:IHobbie[];

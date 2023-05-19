@@ -6,7 +6,11 @@ import Swal from 'sweetalert2';
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.scss']
+  styles: [
+    `.container{
+      background: #EAF2FD;
+    }`
+  ]
 })
 export class ContactComponent {
   formContact!: FormGroup;

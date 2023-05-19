@@ -1,17 +1,10 @@
-<section [ngClass]="{'academic':darkTheme==false}" id="formacion">
-    <div class="academic__container">
-        <h2 class="academic__title" [style]="!darkTheme?'':'color:#fff;'" >Formación académica</h2>
-        <div class="academic__courses">
-            <div class="academic__courses__box" *ngFor="let course of courses">
-                <ul class="academic__courses__list">
-                    <!-- Pon el logotipo de la institución de formación -->
-                    <li class="academic__courses__item__img"><img [src]="course.url"></li>
-                    <li class="academic__courses__item__title" [style]="!darkTheme?'':'color:#fff;'"><h4>{{course.title}}</h4></li>
-                    <li class="academic__courses__item__subtitle" [style]="!darkTheme?'':'color:#fff;'"><p>{{course.subttitle}}</p></li>
-                </ul>
-            </div>
-        </div>
+<section class="px-1 pt-8 md:px-2 lg:px-8 xl:px-8" id="formacion">
+    <h2 class="text-3xl text-center pb-7">Formación académica</h2>
+    <div class="flex flex-wrap  mx-4 md:mx-5 lg:mx-8 xl:mx-8 w-full gap-7">
+        <mat-card *ngFor="let course of courses" class="flex w-10 md:w-5 lg:w-3 xl:w-3 h-12rem lg:h-14rem xl:h-14rem justify-content-center align-items-center">
+            <mat-card-content class="flex justify-content-center h-6rem"><img class="w-9" [src]="course.url"></mat-card-content>
+            <mat-card-title class="text-lg pb-3 pt-3" >{{course.title}}</mat-card-title>
+            <mat-card-subtitle >{{course.subttitle}}</mat-card-subtitle>
+        </mat-card>
     </div>
-    
 </section>
-

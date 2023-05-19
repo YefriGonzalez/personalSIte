@@ -4,7 +4,11 @@ import { ISkill } from 'src/app/interfaces/i-skill';
 @Component({
   selector: 'app-skill',
   templateUrl: './skill.component.html',
-  styleUrls: ['./skill.component.scss']
+  styles: [
+    `.dark_theme:active{
+      background-color:gold ;
+    }`
+  ]
 })
 export class SkillComponent {
   skills:ISkill[];

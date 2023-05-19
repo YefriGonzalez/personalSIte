@@ -5,7 +5,7 @@ import { MenuNetworkItem } from 'src/app/interfaces/menu-network-item';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  styleUrls: []
 })
 export class HeaderComponent {
   title: string;

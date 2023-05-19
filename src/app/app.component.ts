@@ -1,17 +1,43 @@
-import { Component,HostBinding,Inject,Renderer2 } from '@angular/core';
+import { Component, HostBinding, Inject, Renderer2 } from '@angular/core';
 import { MenuItem } from './interfaces/menu-item';
 
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styles: [
+    `@media (max-width: 1024px) {
+
+      #menu__list {
+          display: none;
+      }
+  
+      #menu__list:last-child {
+          display: block;
+      }
+  
+  }
+  
+  /* Medium only */
+  @media (max-width: 480px) {
+      .icon{
+          display: none;
+      }
+      #menu__list {
+          display: none;
+      }
+  
+      #menu__list:last-child {
+          display: block;
+      }
+  }`
+  ]
 })
 export class AppComponent {
-  
+
   items: MenuItem[] = [];
   darkMode: boolean = false;
-  constructor(){
+  constructor() {
     this.chargueMenuItems();
   }
   chargueMenuItems() {
@@ -42,9 +68,9 @@ export class AppComponent {
     this.items.push(menuItem5);
   }
 
-  changeMode(){
-    this.darkMode=!this.darkMode;
+  changeMode() {
+    this.darkMode = !this.darkMode;
     console.log(this.darkMode)
   }
-  
+
 }

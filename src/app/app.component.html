@@ -1,68 +1,37 @@
-<body class="body" [ngClass]="{'dark-mode':darkMode}">
-    <section class="menu">
-        <header class="menu__header">
-            <img class="icon" src="./assets/Vector.png">
-            <h3 class="menu__title" [style]="!darkMode?'':'color:#fff;'">Yefri González</h3>
-        </header>
-        <nav class="nav__menu">
-            <ul class="menu__list">
-                <li class="menu__list__item" *ngFor="let item of items"><a [style]="!darkMode?'':'color:#fff;'" [href]="item.link">{{item.name}}</a></li>
+<div style="background: whitesmoke;">
+    <div class="px-1 md:px-2 lg:px-8 xl:px-8 pt-6">
+        <section class="flex flex-nowrap justify-content-between mx-4 md:mx-5 lg:mx-8 xl:mx-8">
+            <header class="flex align-items-center gap-3">
+                <img class="icon" src="./assets/Vector.png">
+                <h3>Yefri González</h3>
+            </header>
+            <ul class="list-none display-1 flex  justify-content-between align-items-center gap-5">
+                <li *ngFor="let item of items" class="lg:flex xl:flex justify-content-between" id="menu__list">
+                    <a class="no-underline" [href]="item.link">{{item.name}}</a>
+                </li>
+                <li><a class="no-underline" href="#contacto"><strong>Contacto</strong></a></li>
             </ul>
-            <li class="menu__list__item__contato" ><a [style]="!darkMode?'':'color:#fff;'" href="#contacto">Contactame</a></li>
-            <button mat-icon-button matTooltip="Night Mode" (click)="changeMode()"><mat-icon>brightness_medium</mat-icon></button>
-        </nav>
-        
-    </section> 
-    <div *ngIf="darkMode">
-        <br>
-        <mat-divider></mat-divider>
-        <br>
+
+        </section>
     </div>
-    <app-header [darkTheme]="darkMode"></app-header>
-    <div *ngIf="darkMode">
-        <br>
-        <br>
-        <mat-divider></mat-divider>
+
+
+    <app-header></app-header>
+
+    <app-about id="about"></app-about>
+
+    <app-skill id="skills"></app-skill>
+
+    <app-hobbies id="hobbies"></app-hobbies>
+
+    <app-academic id="academic"></app-academic>
+
+    <app-experience id="experience"></app-experience>
+
+    <app-contact id="contact"></app-contact>
+
+
+    <div class="text-center pd-3 pb-4">
+        <p class="text-xl">Desarrollado por Yefri González-2023</p>
     </div>
-    <app-about [darkTheme]="darkMode" id="about"></app-about>
-    <div *ngIf="darkMode">
-        <br>
-        <mat-divider></mat-divider>
-        <br>
-    </div>
-    <app-skill [darkTheme]="darkMode" id="skills"></app-skill>
-    <div *ngIf="darkMode">
-        <br>
-        <mat-divider></mat-divider>
-        <br>
-    </div>
-    <app-hobbies [darkTheme]="darkMode" id="hobbies"></app-hobbies>
-    <div *ngIf="darkMode">
-        <br>
-        <mat-divider></mat-divider>
-        <br>
-    </div>
-    <app-academic  [darkTheme]="darkMode" id="academic"></app-academic>
-    <div *ngIf="darkMode">
-        <br>
-        <mat-divider></mat-divider>
-        <br>
-    </div>
-    <app-experience [darkTheme]="darkMode" id="experience"></app-experience>
-    <div *ngIf="darkMode">
-        <br>
-        <mat-divider></mat-divider>
-        <br>
-    </div>
-    <app-contact [darkTheme]="darkMode" id="contact"></app-contact>
-    <div *ngIf="darkMode">
-        <br>
-        <mat-divider></mat-divider>
-        <br>
-    </div>
-    <section [ngClass]="{'footer':!darkMode}">
-        <div class="footer__rodape">
-            <p>Desarrollado por Yefri González-2023</p>
-        </div>
-    </section>
-</body>
+</div>

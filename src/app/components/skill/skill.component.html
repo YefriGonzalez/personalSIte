@@ -1,11 +1,12 @@
-<section class="skills" id="skills">
-    <h3 [style]="!darkTheme?'':'color:#fff;'" class="skills__title">Skills</h3>
-    <div class="skills__line">
-        <div class="skills__box" *ngFor="let skill of skills">
-            <ul class="list__nav">
-                <li class="skills__img"><img [src]="skill.url"></li>
-                <li [style]="!darkTheme?'':'color:#fff;'" class="skills__name">{{skill.name}}</li>
-            </ul>
-        </div>
+<section class="px-1 pt-8 md:px-2 lg:px-8 xl:px-8"  id="skills">
+    <h3 [style]="!darkTheme?'':'color:#fff;'" class="text-3xl text-center pb-7">Skills</h3>
+    <div class="flex flex-wrap  mx-4 md:mx-5 lg:mx-8 xl:mx-8 w-full gap-7">
+        <mat-card class="flex  w-10 md:w-5 lg:w-12rem xl:w-12rem  h-12rem lg:h-9rem xl:h-9rem justify-content-center align-items-center" *ngFor="let skill of skills">
+            <mat-card-content class="flex justify-content-center h-9rem lg:h-full xl:h-full"><img class="w-6" [src]="skill.url"></mat-card-content>
+            <mat-card-subtitle class="text-lg pb-3 pt-3"
+                [style]="!darkTheme?'':'color:#fff;'">{{skill.name}}
+            </mat-card-subtitle>
+
+        </mat-card>
     </div>
 </section>

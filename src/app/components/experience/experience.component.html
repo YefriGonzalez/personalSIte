@@ -1,19 +1,21 @@
-<section class="experience" id="xp">
-    <h2 class="experience__section__title" [style]="!darkTheme?'':'color:#fff;'">Experiencia Profesional</h2>
-    <div class="experiencie__box" *ngFor="let exp of experiences">
-        <div class="experience__info" >
-            <h2 class="experience__title" [style]="!darkTheme?'':'color:#fff;'">{{exp.title}}</h2>
-            <br>
-            <h3 class="experience__text" [style]="!darkTheme?'':'color:#fff;'">{{exp.text}}</h3>
-            <br>
-            <p class="experience__info__text" [style]="!darkTheme?'':'color:#fff;'">{{exp.info}}</p>
-            <br>
-            <mat-list class="list_experience">
-                <mat-list-item *ngFor="let item of exp.items" class="experience__item">
-                  <mat-icon matListItemIcon [style]="!darkTheme?'':'color:#fff;'" >done_all</mat-icon>
-                  <div matListItemTitle [style]="!darkTheme?'':'color:#fff;'">{{item}}</div>
-                </mat-list-item>
-              </mat-list>
-        </div>
-    </div>
+<section class="px-1 pt-8 md:px-2 lg:px-8 xl:px-8">
+  <h2 class="text-3xl text-center pb-7">Experiencia Profesional</h2>
+  <div class="block md:flex lg:flex xl:flex mx-4 md:mx-5 justify-content-center lg:mx-8 xl:mx-8 gap-7">
+    <mat-card class="h-25rem mt-7" *ngFor="let exp of experiences">
+      <mat-card-header>
+        <mat-card-title>{{exp.title}}</mat-card-title>
+        <mat-card-subtitle>{{exp.text}}</mat-card-subtitle>
+      </mat-card-header>
+      
+      <mat-card-content>
+        {{exp.info}}
+        <mat-list class="list_experience">
+          <mat-list-item *ngFor="let item of exp.items" class="experience__item">
+            <mat-icon matListItemIcon>done_all</mat-icon>
+            <div matListItemTitle>{{item}}</div>
+          </mat-list-item>
+        </mat-list>
+      </mat-card-content>
+    </mat-card>
+  </div>
 </section>
