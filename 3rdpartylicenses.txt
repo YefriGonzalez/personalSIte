@@ -66,6 +66,9 @@ MIT
 @angular/router
 MIT
 
+primeflex
+MIT
+
 rxjs
 Apache-2.0
                                Apache License
