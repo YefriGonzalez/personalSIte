@@ -17,7 +17,7 @@ export class ExperienceComponent {
   chargueExperiences(){
     let experience1: IExperience = {
       title:'Desarrollador Backend',
-      text:'SIGEL-Insituto Nacional de Estadistica de Guatemala',
+      text:'SIGEL',
       info:'Diciembre 2022- Actualidad',
       items:['Laravel','MySql','Colaboracion con frontend en Angular','Docker','Participacion en la planificacion']
     }

@@ -17,7 +17,7 @@ export class AboutComponent {
   constructor(){
     this.title="Sobre mi";
     this.paragrapher1="Mi nombre es Yefri, soy estudiante de Ingenieria en Sistemas, actualmente trabajo en SIGEL como"+
-    " desarrollador backend, a traves de esta empresa trabajo en el INE (Instituto Nacional de Estadistica de Guatemala)"+
+    " desarrollador backend y frontend"+
     ", tambien he tenido la oportunidad ser estudiante de Ciberseguridad en la OEA y su programa"+
     " de Ciberseguridad, a la vez fui uno de los cuatro representantes de Guatemala en el OEA Cyber Challengue 2022 que se "+
     " llevo acabo en la Ciudad de Mexico en el Tecnologico de Monterrey Campus Santa Fe, he tenido la oportunidad de "+
