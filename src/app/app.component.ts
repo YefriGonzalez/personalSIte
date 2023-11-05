@@ -69,14 +69,7 @@ export class AppComponent {
     this.items.push(menuItem5);
   }
 
-  onChangue(event:boolean) {
-    this.darkMode=event;
-    if (event) {
-      this.document.body.classList.add('dark-mode');
-    } else {
-      this.document.body.classList.remove('dark-mode');
-    }
-  }
+
   changeMode(){
     this.darkMode=!this.darkMode;
     if (this.darkMode) {
