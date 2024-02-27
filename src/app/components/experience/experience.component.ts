@@ -15,10 +15,16 @@ export class ExperienceComponent {
   }
 
   chargueExperiences(){
+    let experience:IExperience={
+      title:"Programador e investigador de desarrollo",
+      text:'Cooperativa Salcaja',
+      info:"Septiembre 2023- Actualidad",
+      items:['ReactJS','SQL Server','NodeJS','Laravel','DevExpress','C#',"Firebase","Sequelize"]
+    }
     let experience1: IExperience = {
       title:'Desarrollador Backend',
       text:'SIGEL',
-      info:'Diciembre 2022- Actualidad',
+      info:'Diciembre 2022- Agosto 2023',
       items:['Laravel','MySql','Colaboracion con frontend en Angular','Docker','Participacion en la planificacion']
     }
     let experience2: IExperience = {
@@ -27,6 +33,7 @@ export class ExperienceComponent {
       info:'Noviembre 2022 Ciudad de Mexico',
       items:['Explotacion de Puertos','Analisis Forense','Inyeccion de SQLI','Inyeccion de Codigo']
     }
+    this.experiences.push(experience)
     this.experiences.push(experience1);
     this.experiences.push(experience2);
   }

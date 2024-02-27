@@ -9,8 +9,8 @@
       
       <mat-card-content>
         {{exp.info}}
-        <mat-list class="list_experience">
-          <mat-list-item *ngFor="let item of exp.items" class="experience__item">
+        <mat-list  style="overflow-y: auto !important; max-height: 17rem;">
+          <mat-list-item *ngFor="let item of exp.items"  style="overflow-y: auto;">
             <mat-icon matListItemIcon>done_all</mat-icon>
             <div matListItemTitle>{{item}}</div>
           </mat-list-item>
